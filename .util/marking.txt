@@ -8,35 +8,7 @@ Level-2/test_two_task.py .......                                         [ 66%]
 Level-3/test_three_task.py ........                                      [100%]
 
 ============================== 24 passed in 0.03s ==============================
-************* Module task_three
-Level-3/task_three.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-3/task_three.py:4:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:18:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:4:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:22:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:33:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:38:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:43:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:49:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:55:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:55:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:63:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:63:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:71:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:71:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:79:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:86:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:79:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:90:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:92:23: W0621: Redefining name 'questions' from outer scope (line 131) (redefined-outer-name)
-Level-3/task_three.py:92:51: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:90:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:98:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:100:23: W0621: Redefining name 'quiz' from outer scope (line 138) (redefined-outer-name)
-Level-3/task_three.py:104:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:115:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:119:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
 
-------------------------------------------------------------------
-Your code has been rated at 8.71/10 (previous run: 8.71/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
