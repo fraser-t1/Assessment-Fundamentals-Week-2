@@ -1,18 +1,79 @@
 from datetime import date
 
 
-#####
-#
-# COPY YOUR CODE FROM LEVEL 1 BELOW
-#
-#####
+class Assessment:
+    ValidTypes = {"multiple-choice", "technical", "presentation"}
+
+    def __init__(self, name: str, assessment_type: str, score: float):
+        self.name = name
+
+        if assessment_type not in self.ValidTypes:
+            raise ValueError("Invalid type of assessment")
+        self.type = assessment_type
+
+        if not 0 <= score <= 100:
+            raise ValueError("Score must be between 0-100")
+        self.score = score
+
+    def calculate_score(self) -> float:
+        return self.score
 
 
-#####
-#
-# COPY YOUR CODE FROM LEVEL 1 ABOVE
-#
-#####
+class Trainee:
+    def __init__(self, name: str, email: str, date_of_birth: date, assessments: list = None):
+        self.name = name
+        self.email = email
+        self.date_of_birth = date_of_birth
+
+        if assessments is None:
+            self.assessments = []
+        else:
+            self.assessments = assessments
+
+    def get_age(self) -> int:
+        today = date.today()
+        age = today.year - self.date_of_birth.year
+        return age
+
+    def add_assessment(self, assessment: Assessment) -> None:
+        if not isinstance(assessment, Assessment):
+            raise TypeError("Assessment objects only")
+        self.assessments.append(assessment)
+
+    def get_assessment(self, name: str) -> Assessment | None:
+        for assessment in self.assessments:
+            if assessment.name == name:
+                return assessment
+        return None
+
+    def get_assessment_of_type(self, assessment_type: str) -> list[Assessment]:
+        if assessment_type not in Assessment.ValidTypes:
+            raise ValueError("Invalid assessment type")
+        return [assess for assess in self.assessments if assess.type == assessment_type]
+
+
+class MultipleChoiceAssessment(Assessment):
+    def __init__(self, name: str, score: float):
+        super().__init__(name, "multiple-choice", score)
+
+    def calculate_score(self) -> float:
+        return self.score * 0.7
+
+
+class TechnicalAssessment(Assessment):
+    def __init__(self, name: str, score: float):
+        super().__init__(name, "technical", score)
+
+    def calculate_score(self) -> float:
+        return self.score * 1.0
+
+
+class PresentationAssessment(Assessment):
+    def __init__(self, name: str, score: float):
+        super().__init__(name, "presentation", score)
+
+    def calculate_score(self) -> float:
+        return self.score * 0.6
 
 
 if __name__ == "__main__":
