@@ -7,7 +7,7 @@ Level-1/test_one_task.py .........                                       [ 37%]
 Level-2/test_two_task.py .......                                         [ 66%]
 Level-3/test_three_task.py ........                                      [100%]
 
-============================== 24 passed in 0.04s ==============================
+============================== 24 passed in 0.03s ==============================
 ************* Module task_one
 Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 Level-1/task_one.py:4:0: C0115: Missing class docstring (missing-class-docstring)
@@ -62,5 +62,5 @@ Level-3/task_three.py:115:4: C0116: Missing function or method docstring (missin
 Level-3/task_three.py:119:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.46/10 (previous run: 7.46/10, +0.00)
+Your code has been rated at 7.56/10 (previous run: 7.56/10, +0.00)
 
