@@ -1,16 +1,18 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.14.2, pytest-9.0.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
-collected 0 items / 3 errors
+collected 9 items / 2 errors
 
-!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
-============================== 3 errors in 0.13s ===============================
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.13s ===============================
 ************* Module task_one
 Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-1/task_one.py:6:14: E0602: Undefined variable 'Trainee' (undefined-variable)
-Level-1/task_one.py:9:27: E0602: Undefined variable 'Assessment' (undefined-variable)
-Level-1/task_one.py:11:27: E0602: Undefined variable 'Assessment' (undefined-variable)
-Level-1/task_one.py:13:27: E0602: Undefined variable 'Assessment' (undefined-variable)
+Level-1/task_one.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+Level-1/task_one.py:4:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-1/task_one.py:19:0: C0115: Missing class docstring (missing-class-docstring)
+Level-1/task_one.py:30:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-1/task_one.py:35:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-1/task_one.py:40:4: C0116: Missing function or method docstring (missing-function-docstring)
 ************* Module task_two
 Level-2/task_two.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 Level-2/task_two.py:19:14: E0602: Undefined variable 'Trainee' (undefined-variable)
@@ -30,5 +32,5 @@ Level-3/task_three.py:35:23: W0621: Redefining name 'quiz' from outer scope (lin
 Level-3/task_three.py:33:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+Your code has been rated at 4.49/10 (previous run: 4.49/10, +0.00)
 
