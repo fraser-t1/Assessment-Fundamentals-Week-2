@@ -137,4 +137,14 @@ if __name__ == "__main__":
     ]
     quiz = Quiz(questions, "Maths Quiz", "multiple-choice")
 
-    # Add an implementation for the Marking class below to test your code
+    marker = Marking(quiz)
+
+    print(f"Percentage: {marker.mark()}%")
+
+    final_assessment = marker.generate_assessment()
+    print(f"Generated type: {type(final_assessment).__name__}")
+    print(f"Weighted score: {final_assessment.calculate_score()}")
+
+    trainee = Trainee("Fraser", "f@sigma", date(2025, 12, 1))
+    trainee.add_assessment(final_assessment)
+    print(f"Trainee assessments: {trainee.assessments}")
